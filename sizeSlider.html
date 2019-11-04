@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+     
+<!--HTML -->
+    <br><br><center><font face="arial">
+Use the slider to indicate the <b>size</b> of your motivation to keep learning javascript<br><br>
+    </font></center>
+
+<!--generate slider-->
+    <center><input id="slider" type="range" min="100" max="300" value="1" step="1" onchange="resizeImage();" style="width:300px;">
+    </center><br>
+
+<!--generate image-->
+    <center><div id="img-wrapper" style="width:200px; height:1000px;">
+      <img src="0-0.jpeg" alt="img" id="img" style="width:20%; height:200;" />
+    </div></center>
+    
+    
+<!--JAVASCRIPT -->
+    
+    <script> 
+    
+    function resizeImage() {
+      var image = document.getElementById('img-wrapper'),
+          ranger = document.getElementById('slider');
+      image.style.width = 2*(slider.value / 1)+'px';
+    }
+    </script>
+     
+</html>
